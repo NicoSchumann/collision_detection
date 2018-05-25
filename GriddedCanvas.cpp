@@ -1,10 +1,3 @@
-/*
- * GriddedCanvas.cpp
- *
- *  Created on: May 19, 2018
- *      Author: nico
- */
-
 #include "GriddedCanvas.hpp"
 #include <SFML/Graphics.hpp>
 #include <vector>

@@ -1,10 +1,3 @@
-/*
- * GriddedCanvas.hpp
- *
- *  Created on: May 19, 2018
- *      Author: nico
- */
-
 #ifndef GRIDDEDCANVAS_HPP_
 #define GRIDDEDCANVAS_HPP_
 
@@ -21,12 +14,22 @@ class GriddedCanvas : public Canvas
 {
 public:
 	GriddedCanvas();
+
+	/** Updates the physical state. */
 	void update();
 private:
+	/** Updates a distinct sector of the canvas. */
 	void updateSector(int sectorNo);
+
+	/** Returns a ball's sector number. **/
 	int getSectorNo(const Ball & ball) const;
+
+	/** Returns a ball's sector number of a neighbored sector. */
 	int getSectorNo(const Ball & ball, int oldSectorNo) const;
-	bool sectorContains(const Ball & ball, int sector) const;
+
+	/** True if ball is within the sector */
+	bool sectorContains(const Ball & ball, int sectorNo) const;
+
 	std::array<Sector,64> m_sectors;
 };
 

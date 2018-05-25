@@ -1,10 +1,3 @@
-/*
- * Ball.cpp
- *
- *  Created on: May 9, 2018
- *      Author: nico
- */
-
 #include "Ball.hpp"
 #include <cmath>
 

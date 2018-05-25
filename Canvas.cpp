@@ -1,10 +1,3 @@
-/*
- * Canvas.cpp
- *
- *  Created on: May 9, 2018
- *      Author: nico
- */
-
 #include "Canvas.hpp"
 #include <ctime>
 #include <cstdlib>

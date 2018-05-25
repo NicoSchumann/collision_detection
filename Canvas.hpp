@@ -1,10 +1,3 @@
-/*
- * Canvas.hpp
- *
- *  Created on: May 9, 2018
- *      Author: nico
- */
-
 #ifndef CANVAS_HPP_
 #define CANVAS_HPP_
 
@@ -17,10 +10,15 @@ public:
 	Canvas();
 	virtual ~Canvas();
 
+	/** Handles the mouse events. */
 	void handleInput();
+	/** Updates the physical state. */
 	virtual void update();
+	/** Renders the physics. */
 	void render();
+	/** Throws a ball at the ground */
 	Ball * spawnBall();
+	/** Flags the end of the simulation */
 	bool isDone() const;
 
 	sf::RenderWindow * getWindow();
